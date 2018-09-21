@@ -3,3 +3,21 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+span {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.input {
+    overflow: hidden;
+}
+
+input {
+    display: block;
+    width: 98%;
+    height: 34px;
+    border: 1px solid #f1f1f1;
+    outerline: 0;
+    margin: 10px auto;
+}
