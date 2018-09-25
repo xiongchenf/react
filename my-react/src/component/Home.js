@@ -1,13 +1,17 @@
 import React from 'react';
 
-const Home = (props) => {
-    console.log(props);
-    return(
-        <h1>
-            { props.name.name }
-        </h1>
-    )
+
+export default class Home extends React.Component{
+    constructor(props) {
+        console.log(props)
+        super();
+    }
+
+    render() {
+        return (
+            <div>
+                THis is Home.
+            </div>
+        );
+    }
 }
-
-
-export default Home;
