@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-extends default class PageB extends React.Component {
+export default class PageB extends React.Component {
     constructor(props) {
         super();
     }
