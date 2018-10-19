@@ -1,0 +1,4 @@
+body, html, header, section, footer, nav, article, table, tbody, tr, td, dt, dd, tr, tt, h1, h2, h3, h4, h5, h6, p, span, div, img, canvas, ul, ol, li, input, textarea {
+    margin: 0;
+    padding: 0;
+}
