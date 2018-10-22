@@ -1,0 +1,10 @@
+.container {
+    min-height: 100%;
+}
+.header {
+    background: #f9f9f9;
+    padding: 5px 10px;
+}
+.header button {
+    margin: 0 5px;
+}
