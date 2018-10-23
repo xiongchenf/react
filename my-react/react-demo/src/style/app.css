@@ -1,6 +1,12 @@
-.addProject {
-    padding: 10px;
-    border: 1px solid #e3e3e3;
+body, html, div, p, span, a, br, hr, h1, h2, h3, h4, h5, h6, img, video, canvas, table, tr, td, tt, dl, dt, dd, th, input, button, textarea{
+    margin: 0;
+    padding: 0;
+}
+
+body,html {
+    min-height: 100%;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", sans-serif;
 }
 
 #root {

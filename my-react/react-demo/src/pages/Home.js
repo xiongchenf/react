@@ -2,7 +2,7 @@ import React from 'react'
 import {Button} from 'antd'
 import { NavBar, Icon } from 'antd-mobile'
 import Example from '../compnent/Example'
-import '../style/home.css'
+import '../style/home.scss'
 import 'antd-mobile/dist/antd-mobile.css'
 
 const Head = (props) => {
@@ -24,7 +24,7 @@ const Headers = props => {
         <div className={'header'}>
             <Button type='Primary'>Home</Button>
             <Button>Login</Button>
-            <Button>About</Button>
+            <Button onClick={props.toAbout}>About</Button>
         </div>
     )
 };
@@ -42,6 +42,10 @@ export default class Home extends React.Component {
         this.props.history.push('/about');
     }
 
+    toAbout(e) {
+        this.props.history.push('/about')
+    }
+
     getData(data) {
         this.setState({
             childMsg: data
@@ -51,7 +55,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <div className={'container'}>
-                <Headers/>
+                <Headers toAbout={this.toAbout.bind(this)}/>
                 <Example name="bear.xiong" getData={this.getData.bind(this)}/>
                 <p>childMsg：{this.state.childMsg}</p>
             </div>)

@@ -10,6 +10,11 @@ export default class Home extends React.Component {
     handleClick() {
 
     }
+
+    toAbout() {
+        console.log(this)
+    }
+
     render() {
 
         const Headers = props => {
@@ -17,7 +22,7 @@ export default class Home extends React.Component {
                 <div className={'header'}>
                     <Button type='Primary' onClick={this.handleClick.bind(this)}>Home</Button>
                     <Button onClick={this.handleClick.bind(this)}>Login</Button>
-                    <Button onClick={this.handleClick.bind(this)}>About</Button>
+                    <Button onClick={this.toAbout.bind(this)}>About</Button>
                 </div>
             )
         };

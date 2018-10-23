@@ -1,4 +1,5 @@
 import React from 'react'
+import '../style/about.scss'
 
 export default class About extends React.Component{
     constructor() {
@@ -7,7 +8,9 @@ export default class About extends React.Component{
 
     render() {
         return (
-            <div>about</div>
+            <div className={'about'}>
+                <h1>about</h1>
+            </div>
         )
     }
 
