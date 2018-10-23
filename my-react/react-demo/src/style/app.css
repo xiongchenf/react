@@ -3,7 +3,7 @@ body, html, div, p, span, a, br, hr, h1, h2, h3, h4, h5, h6, img, video, canvas,
     padding: 0;
 }
 
-body,html {
+body, html {
     min-height: 100%;
     font-size: 14px;
     font-family: "Microsoft YaHei", sans-serif;
