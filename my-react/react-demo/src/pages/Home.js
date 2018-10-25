@@ -1,7 +1,7 @@
 import React from 'react'
-import {Button} from 'antd'
 import { NavBar, Icon } from 'antd-mobile'
 import Example from '../compnent/Example'
+import Headers from '../compnent/Head'
 import '../style/home.scss'
 import 'antd-mobile/dist/antd-mobile.css'
 
@@ -19,15 +19,15 @@ const Head = (props) => {
     );
 };
 
-const Headers = props => {
-    return (
-        <div className={'header'}>
-            <Button type='Primary'>Home</Button>
-            <Button>Login</Button>
-            <Button onClick={props.toAbout}>About</Button>
-        </div>
-    )
-};
+// const Headers = props => {
+//     return (
+//         <div className={'header'}>
+//             <Button type='Primary'>Home</Button>
+//             <Button>Login</Button>
+//             <Button onClick={props.toAbout}>About</Button>
+//         </div>
+//     )
+// };
 
 
 export default class Home extends React.Component {
@@ -42,8 +42,16 @@ export default class Home extends React.Component {
         this.props.history.push('/about');
     }
 
-    toAbout(e) {
-        this.props.history.push('/about')
+    toHome() {
+        this.props.history.push('/home');
+    }
+
+    toLogin() {
+        this.props.history.push('/login');
+    }
+
+    toAbout() {
+        this.props.history.push('/about');
     }
 
     getData(data) {
@@ -55,7 +63,8 @@ export default class Home extends React.Component {
     render() {
         return (
             <div className={'container'}>
-                <Headers toAbout={this.toAbout.bind(this)}/>
+                <Head/>
+                <Headers toAbout={this.toAbout.bind(this)} toHome={this.toHome.bind(this)} toLogin={this.toLogin.bind(this)}/>
                 <Example name="bear.xiong" getData={this.getData.bind(this)}/>
                 <p>childMsg：{this.state.childMsg}</p>
             </div>)
