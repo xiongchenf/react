@@ -1,0 +1,16 @@
+$color: #333;
+body, html, div, p ,span, a, img, canvas, input, textarea, h1, h2, h3, h4, h5, h6, button {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  min-height: 100%;
+  background: #f9f9f9;
+  font-size: 14px;
+  font-family: '微软雅黑', sans-serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
