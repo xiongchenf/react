@@ -1,21 +1,5 @@
 import React  from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Index from './pages/Index'
-
 import './style/app.scss'
-const Routes = () => {
-    return (
-        <BrowserRouter>
-            <Switch>
-                <Route path={'/'} component={Index}/>
-            </Switch>
-        </BrowserRouter>
-    );
-};
+import Routers from './routers/Index'
 
-
-export default class App extends React.Component{
-    render(){
-        return <Routes/>
-    }
-}
+export default () => <Routers/>
