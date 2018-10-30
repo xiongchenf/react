@@ -6,9 +6,22 @@
   padding: 10px;
 }
 
+.container {
+  overflow: hidden;
+}
+
 .head {
-  height: 50px;
-  line-height: 50px;
+  width: 100%;
+  padding: 0;
+  .swiper {
+    max-height: 260px;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .foot {

@@ -14,3 +14,27 @@ body, html {
 a, a:hover {
   text-decoration: none;
 }
+
+.oh {
+  overflow: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+.active, .show {
+  display: block;
+}
