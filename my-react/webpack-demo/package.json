@@ -21,6 +21,7 @@
     "webpack-serve": "^2.0.2"
   },
   "dependencies": {
+    "css-loader": "^1.0.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-router": "^4.3.1",
