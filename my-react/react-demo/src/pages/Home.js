@@ -4,6 +4,33 @@ import Example from '../compnent/Example'
 import Headers from '../compnent/Head'
 import '../style/home.scss'
 import 'antd-mobile/dist/antd-mobile.css'
+import { createStore } from 'redux'
+
+const initialData = {
+    loginState: false,
+    userInfo: {
+        name: 'bell',
+        age: 25
+    },
+    token: ''
+};
+
+const reducer = (state = initialData, action) => {
+    if (action.type === 'ADD') {
+        let age = state.userInfo.age;
+        age++;
+        state.userInfo.age = age;
+    }
+    return state;
+};
+
+const store = createStore(reducer);
+
+store.dispatch({type: 'ADD'});
+
+store.subscribe(state => {
+    console.log(state);
+});
 
 const Head = (props) => {
     return (
